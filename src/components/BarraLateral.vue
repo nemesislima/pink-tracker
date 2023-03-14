@@ -1,7 +1,9 @@
 <template>
     <header>
         <h1>
-            <img src="../assets/pd.png" alt="Gem da Pink Diamond">
+            <a href="https://github.com/nemesislima/pink-tracker" target="_blank">
+                <img src="../assets/pd.png" alt="Gem da Pink Diamond">
+            </a>
         </h1>
         <button class="button" @click="alterarTema">
             {{ textoBotao }} 
@@ -52,8 +54,16 @@ header h1 {
     text-align: center;
 }
 
-header h1 img {
+header h1 a img {
     max-width: 40%;
+}
+
+a img:hover {
+    transform: scale(1.2);
+}
+
+a img:active {
+    transform: scale(1.3);
 }
 
 header button {
